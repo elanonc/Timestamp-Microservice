@@ -13,3 +13,20 @@ Você pode encontrar o desafio no seguinte link: https://www.freecodecamp.org/le
  - [x] Waiting: If the input date string is invalid, the api returns an object having the structure { error : "Invalid Date" }
  - [x] (An empty date parameter should return the current time in a JSON object with a unix key
  - [x] An empty date parameter should return the current time in a JSON object with a utc key
+
+
+## Para executar
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/elanonc/Timestamp-Microservice
+
+# Entre na pasta
+$ cd Timestamp-Microservice
+
+# Instale as dependências
+$ npm install
+
+# Execute
+$ npm run dev
+```
