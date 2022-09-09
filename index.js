@@ -13,7 +13,7 @@ app.use(cors({optionsSuccessStatus: 200}));  // some legacy browsers choke on 20
 app.use(express.static('public'));
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get("/api/hello", function (req, res) {
@@ -39,7 +39,6 @@ app.get("/api/:date", function (req, res) {
   if (parseInt(dateString) < 10000) {   // 5 ou mais digitos devem formar uma hora unix
     date = new Date(dateString);
   } else {
-    console.log(parseInt(dateString));
     date = new Date(parseInt(dateString));
   }
 
